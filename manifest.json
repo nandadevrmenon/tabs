@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Group New Tab",
+  "version": "1.0.0",
+  "description": "Opens a new tab in the same tab group with Alt+T (Option+T on Mac).",
+  "permissions": [
+    "tabs",
+    "tabGroups"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-tab-in-group": {
+      "suggested_key": {
+        "default": "Alt+T",
+        "mac": "Alt+T"
+      },
+      "description": "Open a new tab in the same tab group"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
